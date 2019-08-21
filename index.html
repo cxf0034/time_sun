@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    	 <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+    	 <link rel="stylesheet" href="css/index.css">
+    	 <script src="js/jquery-3.4.1.js"></script>
+    	 <script src="js/index.js"></script>
+		 <script src="bootstrap-3.3.7-dist/js/bootstrap.js">
+		 </script>
+
+		 <script>
+		 	$(function(){
+
+
+		 			$('.cxf_about_ul li').click(function(){
+
+		 				$(this).css({
+		 					'background':' #169ec8',
+		 					'opacity':'1'
+		 					
+		 				});
+		 				$(this).siblings().css({
+		 					'backgroundColor': 'rgba(0,194,255,.4)',
+		 					'opacity':'0.7'
+		 				});
+
+		 				$(this).children('span').addClass('triangle');
+		 			
+		 				$(this).siblings().children('span').removeClass('triangle');
+
+		 				var index=$(this).index();
+		 				$('.cxf_about_box').removeClass('cxf_ab_con');
+		 				$('.cxf_about_box').eq(index).addClass('cxf_ab_con');
+
+		 			});
+
+		 	})
+		 		
+		 	
+
+		 </script>
+		 <style>
+		 
+		 	
+		 </style>
+    </head>
+    <body>
+
+<!-- ========================头部导航栏=========================== -->
+
+<nav class="navbar navbar-default cxf_navbar">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button> 
+	     <a class="cxf_brand" href="#">
+	    	 <img src="image/logo.svg" alt="时光网络科技有限公司" 
+	      	   title="时光网络科技有限公司" width="250"> 
+	      </a> 
+	        
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+    
+      <ul class="nav navbar-nav navbar-left cxf_nav ">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">关于</a></li>
+        <li><a href="#">服务</a></li>
+        <li><a href="#">方案</a></li>
+        <li><a href="#">客户</a></li>
+        <li><a href="#">联系</a></li>
+      </ul>
+      <p class="navbar-text navbar-right cxf_tel">
+      		<a href="#" class="navbar-link " title="全国统一客服热线：400-6650-361">
+      		<span class="glyphicon glyphicon-earphone"></span>
+      		400-6650-361
+      		</a>
+      </p>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<!--===========================轮播图=========================-->
+
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+	  <ol class="carousel-indicators">
+	    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+	  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner cxf_inner" role="listbox1">
+	    <div class="item active">
+		      <img src="image/banner01.jpg" alt="">
+		      <div class="carousel-caption">
+		      		<h1>SUCCESS</h1>
+					<h2>让我们为你的<span>成功</span>指引道路！</h2>
+		        	<p>Let Us Show You the Way to Success</p>
+		      </div>
+	    </div>
+	    <div class="item">
+		      <img src="image/banner02.jpg" alt="">
+		      <div class="carousel-caption">
+		        	<h1>SUCCESS</h1>
+					<h2>让我们为你的<span>成功</span>指引道路！</h2>
+		        	<p>Let Us Show You the Way to Success</p>
+		      </div>
+	    </div>
+	    <div class="item">
+		      <img src="image/banner03.jpg" alt="">
+		      <div class="carousel-caption">
+		       		<h1>SUCCESS</h1>
+					<h2>让我们为你的<span>成功</span>指引道路！</h2>
+		        	<p>Let Us Show You the Way to Success</p>
+		      </div>
+	    </div>
+	    <div class="item">
+		      <img src="image/banner04.jpg" alt="">
+		      <div class="carousel-caption">
+		        	<h1>SUCCESS</h1>
+					<h2>让我们为你的<span>成功</span>指引道路！</h2>
+		        	<p>Let Us Show You the Way to Success</p>
+		      </div>
+	    </div>
+	    <div class="item">
+		      <img src="image/banner05.jpg" alt="">
+		      <div class="carousel-caption">
+		       		<h1>SUCCESS</h1>
+					<h2>让我们为你的<span>成功</span>指引道路！</h2>
+		        	<p>Let Us Show You the Way to Success</p>
+		      </div>
+	    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+    <!-- ==========================箭头===================== -->
+		  		<a href="#" class="scroll-down">
+					<span class="down-button scroll-button"></span>
+					<span class="down-button scroll-button"></span>
+				</a>
+
+
+</div>
+
+<!-- =========================关于============================== -->
+<div class="cxf_about">
+	<div class="container ">
+		<div class="cxf_about_content">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-2 col-sm-8 col-sm-offset-2 ">
+				  	<ul class="cxf_about_ul">
+				  		<li style="background:#169ec8;opacity:1; "><span class="triangle"></span>简介
+				  		</li>
+
+				  		<li><span></span>实力
+				  		</li>	
+
+				  		<li><span></span>文化
+				  		</li>
+
+				  		<li><span></span>动态
+				  		</li>
+				  	</ul>
+				  	<div class="cxf_about_jianjie cxf_about_box cxf_ab_con">
+						<p>时光网络科技，前身是科瑞思软件工作室，组建于2007年09月，现位于漯河市源汇区柳江路69号。是针对政府机构、大中小企业提供信息化管理的咨询、实施、培训、服务为一体的企业管理信息化的高新技术企业。
+						</p>
+						<p>时光网络科技专注于为政府机构或企业的管理信息化、幼儿及中小学教育信息化、市政运营信息化等相关领域，凭借多年在应用系统开发以及信息安全服务的积累的经验，为用户提供信息化服务咨询、完整的解决方案、服务和技术支持。
+						</p>
+						<p>时光网络科技倡导"专业、务实、高效、创新"的企业精神，具有良好的内部机制。优良的工作环境以及良好的激励机制，吸引了一批年轻的、有学识的、具有实干精神的人才。高素质、高水平、高效率的人才是时光网络科技在当今激烈的市场中立于不败之地的保障。
+						</p>
+					</div>
+					<div class="cxf_shili cxf_about_box">
+						<dl>
+							<dt class="h4 highlight">完整、完美的策划和设计</dt>
+							<dd>公司在产品研发方面的高投入，众多项目的实际应用，让我们具备了相应的创造力和丰富的经验，这将成为解决疑问和难题的良好保证。可为您提供多方面完整、完美的策划和设计：如项目的规划立项、总体方案设计、方案评估论证。</dd>
+							<dt class="h4 highlight">先进、专业的支持与服务</dt>
+							<dd>公司众多一流人才的深层磨合，对最新技术执拗的探讨精神，使我们能够保证为你提供专业的应用。严格遵守"及时、专业、真诚"的服务方针以保证最快的速度、最有效的方法为您提供集成化的技术服务，解除您的后顾之忧。</dd>
+							<dt class="h4 highlight">系统集成与应用系统开发</dt>
+							<dd>与知名IT厂商和IT服务供应商建立长久战略伙伴合作关系，让您时刻把握前沿的技术脉搏和行业动态。时光网络科技真诚希望能够有机会参与您的企业信息化建设，解决您在信息建设过程中出现的各类的问题，为您信息化建设做出我们的贡献。</dd>
+						</dl>
+					</div>	
+					<div class="cxf_wenhua cxf_about_box">
+						<dl>
+							<dt class="h4 highlight">客户至上</dt>
+							<dd>以客户业务为中心，以客户实际业务需求为导向，从客户利益出发，为客户提供完善的信息化应用解决方案。</dd>
+							<dt class="h4 highlight">尊重个人</dt>
+							<dd>不论职位高低，都将受到充分的尊重和平等的对待。给予同等的机会，鼓励与公司共同发展，制定与公司发展步调一致的个人年度事业发展计划。</dd>
+							<dt class="h4 highlight">鼓励创新</dt>
+							<dd>系统开发是一项智力型的事业，公司提供挑战性的事业发展空间，鼓励大家创造性地工作，充分发挥个人的最大价值，从而创造出最佳的工作效果。</dd>
+							<dt class="h4 highlight">团队合作</dt>
+							<dd>在工作中，公司强调相互尊重、相互理解和有效的沟通，从而在平等和谐的合作氛围中创造"1 + 1&gt;2"的工作效应。</dd>
+						</dl>
+					</div> 
+					<div class="cxf_dongtai cxf_about_box">
+						<dl>
+							<dt class="h4 highlight"><a href="#" target="_blank" >对优秀程序员的思考</a></dt>
+							<dd>关于技术人员知识体系的思考PS：网上已经有很多类似的文章，但我依然要再造一次“轮子”，因为多少有些不同的心得。人生总有目标和追求不管…</dd>
+							<dt class="h4 highlight"><a href="#" target="_blank" >解决 IIS 和 Serv-U 端口冲突的问题</a></dt>
+							<dd>服务器情况：服务器上IIS配置的是网站，ftp服务器采用的是Serv-U，用于文件上传。症状：总是看到Serv-U的图标有黄色感叹号出现，而且IIS中…</dd>
+							<dt class="h4 highlight"><a href="#" target="_blank">ASP.NET MVC中，在View和PartialView中"共…</a></dt>
+							<dd>最近在做一些比较基础的部分，做到界面时想到一个问题：在ASP.NET MVC(Razor View Engine)中，如果我要让多个项目之间共享一个_Layout.csht…</dd>
+							<dt class="h4 highlight"><a href="#" target="_blank" >程序员想更成功？这个方法最关键</a></dt>
+							<dd>虽然我一直以来都很享受于读书，但我总是很难挤出时间来阅读。而当真的空闲了，我通常会去阅读小说、自传，或一些怪癖但有趣的东西。我的Ki…</dd>
+						</dl>
+					</div>	  
+				 </div>
+			</div>
+		</div>
+	</div>
+	<div class="robot_img"></div>
+</div>
+
+
+<!-- ===========================服务============================= -->
+<div class="cxf_server">
+		<div class="container ">
+				<p class="server_title">我们<span>提供</span>以下<span>服务</span>供您选择</p>
+				<div class="cxf_server_img"><img src="image/shiguang_splitter.png" alt=""></div>
+
+
+
+				<div class="row">
+				  <div class=" col-sm-3">
+				    <div class="thumbnail">
+				      <div class="caption">
+					      	<i class="cxf_server_icon 
+					      	glyphicon glyphicon-retweet"></i>
+					        <h3>软件定制开发</h3>
+					        <a href="#" class="undecoration" target="_blank">我们推出的软件定制、定制软件服务，以最快的速度，简单的流程为客户定制高质量、易操作的管理软件，协助客户解决管理难题，为客户提供更优质的服务。
+				        	</a>
+				      </div>
+				    </div>
+				  </div>
+
+
+				  <div class=" col-sm-3">
+				    <div class="thumbnail">
+				      <div class="caption">
+					      	<i class="cxf_server_icon 
+					      	glyphicon glyphicon-file"></i>
+					        <h3>行业软件</h3>
+					        <a href="#" class="undecoration" target="_blank">我们推出的软件定制、定制软件服务，以最快的速度，简单的流程为客户定制高质量、易操作的管理软件，协助客户解决管理难题，为客户提供更优质的服务。
+				       		 </a>
+				      </div>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-3">
+				    <div class="thumbnail">
+				      <div class="caption">
+					      	<i class="cxf_server_icon 
+					      	glyphicon glyphicon-comment"></i>
+					        <h3>微信公众平台</h3>
+					        <a href="#" class="undecoration" target="_blank">我们推出的软件定制、定制软件服务，以最快的速度，简单的流程为客户定制高质量、易操作的管理软件，协助客户解决管理难题，为客户提供更优质的服务。
+				       		 </a>
+				      </div>
+				    </div>
+				  </div>
+
+				  <div class=" col-sm-3">
+				    <div class="thumbnail">
+				      <div class="caption">
+					      	<i class="cxf_server_icon 
+					      	glyphicon glyphicon-earphone"></i>
+					        <h3>400企业电话</h3>
+					        <a href="#" class="undecoration" target="_blank">我们推出的软件定制、定制软件服务，以最快的速度，简单的流程为客户定制高质量、易操作的管理软件，协助客户解决管理难题，为客户提供更优质的服务。
+				        	</a>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="row">
+				  <div class=" col-sm-3">
+				    <div class="thumbnail">
+				      <div class="caption">
+					      	<i class="cxf_server_icon 
+					      	glyphicon glyphicon-globe"
+					      	aria-hidden="true"></i>
+					        <h3>网站建设</h3>
+					        <a href="#" class="undecoration" target="_blank">我们推出的软件定制、定制软件服务，以最快的速度，简单的流程为客户定制高质量、易操作的管理软件，协助客户解决管理难题，为客户提供更优质的服务。
+				        	</a>
+				      </div>
+				    </div>
+				  </div>
+
+
+				  <div class=" col-sm-3">
+				    <div class="thumbnail">
+				      <div class="caption">
+					      	<i class="cxf_server_icon 
+					      	glyphicon glyphicon-file"	aria-hidden="true"></i>
+					        <h3>域名注册</h3>
+					        <a href="#" class="undecoration" target="_blank">我们推出的软件定制、定制软件服务，以最快的速度，简单的流程为客户定制高质量、易操作的管理软件，协助客户解决管理难题，为客户提供更优质的服务。
+				       		 </a>
+				      </div>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-3">
+				    <div class="thumbnail">
+				      <div class="caption">
+					      	<i class="cxf_server_icon 
+					      	glyphicon glyphicon-object-align-vertical" 	aria-hidden="true"></i>
+					        <h3>虚拟主机</h3>
+					        <a href="#" class="undecoration" target="_blank">我们推出的软件定制、定制软件服务，以最快的速度，简单的流程为客户定制高质量、易操作的管理软件，协助客户解决管理难题，为客户提供更优质的服务。
+				       		 </a>
+				      </div>
+				    </div>
+				  </div>
+
+				  <div class=" col-sm-3">
+				    <div class="thumbnail">
+				      <div class="caption">
+					      	<i class="cxf_server_icon 
+					      	glyphicon glyphicon-modal-window" aria-hidden="true"></i>
+					        <h3>400企业邮局</h3>
+					        <a href="#" class="undecoration" target="_blank">我们推出的软件定制、定制软件服务，以最快的速度，简单的流程为客户定制高质量、易操作的管理软件，协助客户解决管理难题，为客户提供更优质的服务。
+				        	</a>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+
+			
+		</div>
+</div>
+
+
+<!-- ===========================方案=========================== -->
+
+<div class="cxf_server cxf_answer">
+		<div class="container ">
+				<p class="server_title">帮助企业<span>站在</span>管理、营销的<span>顶峰</span>！</p>
+				<div class="cxf_server_img"><img src="image/shiguang_splitter.png" alt=""></div>
+
+
+
+				<div class="row">
+				  <div class=" col-sm-3">
+				    <div class="thumbnail">
+				      <div class="caption">
+					      	<i class="cxf_server_icon 
+					      	glyphicon glyphicon-home"></i>
+					        <h3>政府机构</h3>
+					        <a href="#" class="undecoration" target="_blank">政府行业解决方案主要包括政府通用解决方案、审计行业、财政行业、统战行业、药监行业、质监行业、环保行业、气象行业、农业等解决方案。
+				        	</a>
+				      </div>
+				    </div>
+				  </div>
+
+
+				  <div class=" col-sm-3">
+				    <div class="thumbnail">
+				      <div class="caption">
+					      	<i class="cxf_server_icon 
+					      glyphicon glyphicon-education"></i>
+					        <h3>教育行业</h3>
+					        <a href="#" class="undecoration" target="_blank">提供信息化管理平台，包括学生档案、收费、家庭作业、网络课堂、在线考试、安全进出等最优的数字化校园解决方案，为教育发展提供强大武器。
+				       		 </a>
+				      </div>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-3">
+				    <div class="thumbnail">
+				      <div class="caption">
+					      	<i class="cxf_server_icon 
+					      	glyphicon glyphicon-piggy-bank"></i>
+					        <h3>公共事业</h3>
+					        <a href="#" class="undecoration" target="_blank">我们推出的软件定制、定制软件服务，以最快的速度，简单的流程为客户定制高质量、易操作的管理软件，协助客户解决管理难题，为客户提供更优质的服务。
+				       		 </a>
+				      </div>
+				    </div>
+				  </div>
+
+				  <div class=" col-sm-3">
+				    <div class="thumbnail">
+				      <div class="caption">
+					      	<i class="cxf_server_icon 
+					      	glyphicon glyphicon-cloud"></i>
+					        <h3>云计算与虚拟化</h3>
+					        <a href="#" class="undecoration" target="_blank">我们推出的软件定制、定制软件服务，以最快的速度，简单的流程为客户定制高质量、易操作的管理软件，协助客户解决管理难题，为客户提供更优质的服务。
+				        	</a>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="row">
+				  <div class=" col-sm-3">
+				    <div class="thumbnail">
+				      <div class="caption">
+					      	<i class="cxf_server_icon 
+					      	glyphicon glyphicon-globe"
+					      	aria-hidden="true"></i>
+					        <h3>网站建设</h3>
+					        <a href="#" class="undecoration" target="_blank">我们推出的软件定制、定制软件服务，以最快的速度，简单的流程为客户定制高质量、易操作的管理软件，协助客户解决管理难题，为客户提供更优质的服务。
+				        	</a>
+				      </div>
+				    </div>
+				  </div>
+
+
+				  <div class=" col-sm-3">
+				    <div class="thumbnail">
+				      <div class="caption">
+					      	<i class="cxf_server_icon 
+					      	glyphicon glyphicon-file"	aria-hidden="true"></i>
+					        <h3>域名注册</h3>
+					        <a href="#" class="undecoration" target="_blank">我们推出的软件定制、定制软件服务，以最快的速度，简单的流程为客户定制高质量、易操作的管理软件，协助客户解决管理难题，为客户提供更优质的服务。
+				       		 </a>
+				      </div>
+				    </div>
+				  </div>
+
+				  <div class="col-sm-3">
+				    <div class="thumbnail">
+				      <div class="caption">
+					      	<i class="cxf_server_icon 
+					      	glyphicon glyphicon-object-align-vertical" 	aria-hidden="true"></i>
+					        <h3>虚拟主机</h3>
+					        <a href="#" class="undecoration" target="_blank">我们推出的软件定制、定制软件服务，以最快的速度，简单的流程为客户定制高质量、易操作的管理软件，协助客户解决管理难题，为客户提供更优质的服务。
+				       		 </a>
+				      </div>
+				    </div>
+				  </div>
+
+				  <div class=" col-sm-3">
+				    <div class="thumbnail">
+				      <div class="caption">
+					      	<i class="cxf_server_icon 
+					      	glyphicon glyphicon-modal-window" aria-hidden="true"></i>
+					        <h3>400企业邮局</h3>
+					        <a href="#" class="undecoration" target="_blank">我们推出的软件定制、定制软件服务，以最快的速度，简单的流程为客户定制高质量、易操作的管理软件，协助客户解决管理难题，为客户提供更优质的服务。
+				        	</a>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+
+			
+		</div>
+</div>
+
+<!-- ===========================因你而精彩=========================== -->
+<div class="cxf_server cxf_you">
+		<div class="container ">
+				<p class="server_title">我们<span>提供</span>以下<span>服务</span>供您选择</p>
+				<div class="cxf_server_img"><img src="image/shiguang_splitter.png" alt="">
+				</div>
+
+				<div class="row">
+
+				  <div class=" col-sm-3">
+					      	<img src="image/logo01.jpg" alt="">
+					       	<p>力帆汽车4s店</p>
+				  </div>
+				   <div class=" col-sm-3">
+					      	<img src="image/logo02.jpg" alt="">
+					       	<p>西平凯达燃气有限公司</p>
+				  </div>
+				   <div class=" col-sm-3">
+					      	<img src="image/logo03.jpg" alt="">
+					       	<p>郾城环保局</p>
+				  </div>
+				   <div class=" col-sm-3">
+					      	<img src="image/logo04.jpg" alt="">
+					       	<p>中共漯河市委党校</p>
+				  </div>
+
+				</div>
+				<div class="row">
+
+				  <div class=" col-sm-3">
+					      	<img src="image/logo05.jpg" alt="">
+					       	<p>漯河市委统战部</p>
+				  </div>
+				   <div class=" col-sm-3">
+					      	<img src="image/logo06.jpg" alt="">
+					       	<p>永城市委统战部</p>
+				  </div>
+				   <div class=" col-sm-3">
+					      	<img src="image/logo07.jpg" alt="">
+					       	<p>河南万顺科技有限公司</p>
+				  </div>
+				   <div class=" col-sm-3">
+					      	<img src="image/logo08.jpg" alt="">
+					       	<p>漯河市公安局</p>
+				  </div>
+
+				</div>
+
+				<div class="row">
+
+				  <div class=" col-sm-3">
+					      	<img src="image/logo09.jpg" alt="">
+					       	<p>河南简好节能技术有限公司</p>
+				  </div>
+				   <div class=" col-sm-3">
+					      	<img src="image/logo10.jpg" alt="">
+					       	<p>恒涛拍卖</p>
+				  </div>
+				   <div class=" col-sm-3">
+					      	<img src="image/logo11.jpg" alt="">
+					       	<p>香港夏博装饰</p>
+				  </div>
+				   <div class=" col-sm-3">
+					      	<img src="image/logo12.jpg" alt="">
+					       	<p>勐海县银海石斛开发有限公司</p>
+				  </div>
+
+				</div>
+		</div>
+</div>
+
+<!-- ================================联系============================== -->
+<div class="cxf_server cxf_comminute">
+		<div class="container">
+				<p class="server_title">与我们<span>保持联系</span></p>
+				<div class="cxf_server_img"><img src="image/shiguang_splitter.png" alt="">
+				</div>
+
+				<div class="row">
+						<div class=" col-sm-4">
+					      	<ul>
+					      		<li><span>@</span>漯河时光网络科技有限公司</li>
+					      		<li>
+					      		<span class="glyphicon glyphicon-camera"></span>
+					      		<a href="#">豫ICP备14021451号</a>
+					      		</li>
+					      		<li>
+					      		<span class="glyphicon glyphicon-map-marker"></span>
+					      		<a href="#">漯河市源汇区汉江路西段MAX世界港1#2007</a>
+					      		</li>
+					      		<li>
+					      			<span class="glyphicon glyphicon-earphone"></span>
+					      			<a href="#">0395-5565361</a>
+					      			<a href="#">400-6650-361</a>
+					      		</li>
+					      		<li>
+					      			<span class="glyphicon glyphicon-envelope"></span>
+						      		QQ: <a href="#">9348526</a> 
+						      		  Email:suport   @cxfcxfcxf
+					      		</li>
+					      		<li class="btn">
+					      		<span></span>
+					      		<a href="#"><span class="glyphicon glyphicon-send"></span>在线提交需求</a>
+					      		</li>
+					      		<li class="btn btn1">
+					      		<span></span>
+					      		<a href="#"><span class=" glyphicon glyphicon-edit "></span>查找工作机会</a>
+					      		</li>
+					      	</ul>
+				 		</div>
+
+				 		<div class="col-sm-4 col-xs-6 foot">
+				 			<img src="image/qrcode_for_weibo.png" alt="" title="时光网络科技">
+				 			<p>官方微博<a href="#">@时光网络科技</a></p>
+				 		</div>
+				 		<div class="col-sm-4 col-xs-6 foot">
+				 			<img src="image/qrcode_for_weixin.jpg" alt="" title="官方微信">
+				 			<p>官方微信</p>
+				 		</div>
+				</div>				
+		</div>
+</div>
+
+    </body>
+</html>
